@@ -1,0 +1,23 @@
+{% from "partials/location-card.html" import locationCard %}
+
+<ul>
+    {{ locationCard (
+        "/images/SRON-Leiden.webp",
+        "SRON gebouw in Leiden",
+        "Leiden",
+        "Niels Bohrweg 4",
+        "2333 CA Leiden",
+        "+31 (0)88 777 56 00"
+    ) }}
+
+    {{ locationCard (
+        "/images/SRON-Groningen.webp",
+        "SRON gebouw in Groningen",
+        "Groningen",
+        "Landleven 12",
+        "9747 AD Groningen",
+        "+31 (0)50 363 40 74"
+    ) }}
+</ul>  
+
+{% include "partials/footer-navigation.html" %}
