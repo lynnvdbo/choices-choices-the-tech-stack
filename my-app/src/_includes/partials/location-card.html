@@ -1,0 +1,13 @@
+{% macro locationCard ( image, alt, city, street, postalCode, phone) %}
+    <li class="location">
+        <!-- <enhanced:img src={{image}} alt={{alt}} sizes="50vw" loading="lazy"/> -->
+        <img src="{{ image }}" alt="{{ alt }}" loading="lazy">
+        <h4 class="label visually-hidden">{{ city }}</h4>
+        <address>
+            {{ street }}<br>
+            {{ postalCode }}<br>
+            The Netherlands<br>
+            <a href="tel:{{ phone }}">{{ phone }}</a>
+        </address>
+    </li>
+{% endmacro %}  
