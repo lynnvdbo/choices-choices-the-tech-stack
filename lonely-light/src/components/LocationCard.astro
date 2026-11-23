@@ -1,10 +1,18 @@
 
 ---
+import { Image } from "astro:assets";
+
 const { image, alt, city, street, postalCode, phone } = Astro.props;
 ---
 
 <li class="location">
-    <img src={image.src} alt={alt} loading="lazy" />
+    <Image
+        src={image}
+        alt={alt}
+        loading="lazy"
+        widths={[400, 800, 1600]}
+        sizes="50vw"
+    />
 
     <h4 class="label visually-hidden">{city}</h4>
 
