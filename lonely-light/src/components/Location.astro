@@ -1,0 +1,33 @@
+
+---
+import LocationCard from "./LocationCard.astro";
+
+import leiden from "../assets/images/SRON-Leiden.webp";
+import groningen from "../assets/images/SRON-Groningen.webp"; 
+---
+
+<ul class="locations">
+    <LocationCard
+        image={leiden}
+        alt="SRON building in Leiden"
+        city="Leiden"
+        street="Niels Bohrweg 4"
+        postalCode="2333 CA Leiden"
+        phone="+31 (0)88 777 56 00"
+    />
+
+    <LocationCard
+        image={groningen}
+        alt="SRON building in Groningen"
+        city="Groningen"
+        street="Landleven 12"
+        postalCode="9747 AD Groningen"
+        phone="+31 (0)50 363 40 74"
+    />
+</ul>
+
+<style>
+    .locations {
+        display: flex;
+    }
+</style>
